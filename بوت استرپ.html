@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>املاک مگونی | Luminor</title>
+    <!-- فقط لینک بوت‌استرپ RTL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <!-- ۱. منوی بالای سایت (دقیقاً مثل عکس) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 fixed-top">
+        <div class="container">
+            <!-- لوگو (سمت راست) -->
+            <a class="navbar-brand fw-bold fs-3 text-dark" href="#">Luminor</a>
+            
+            <!-- دکمه همبرگری برای موبایل -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="menu">
+                <!-- منوی وسط -->
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-medium">
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">صفحات</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">لیست</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">ویژگی‌ها</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">وبلاگ</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">تماس با ما</a></li>
+                </ul>
+                <!-- دکمه‌های سمت چپ -->
+                <div class="d-flex gap-2">
+                    <a href="#" class="btn btn-outline-dark px-3">ورود / ثبت نام</a>
+                    <a href="#" class="btn btn-warning px-3">ارسال امول</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ۲. بخش اصلی (Hero Section) -->
+    <!-- pt-5 و mt-5 برای فاصله گرفتن از منوی فیکس شده -->
+    <section class="pt-5 mt-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                
+                <!-- ستون متن (سمت راست) -->
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <h1 class="display-4 fw-bold text-dark mb-4">
+                        کشف کنید <br> زندگی ایده‌آل
+                    </h1>
+                    <p class="text-muted lh-lg mb-4" style="text-align: justify;">
+                        این ساحلی لوکس ویلا در مالیبو دارای جارو است آقایانوس نماها، مفهوم بازمدن طراحی، و ظرافت تصفیه شده درکل. با بی نهایت استراحت کنید استخر، باغهای پرجنب و جوش، و خصوصی دسترسی به ساحل برای نهایی عقب نشینی ساحلی.
+                    </p>
+                    <a href="#" class="btn btn-dark px-4 py-2 fw-medium">مشاهده خصوصیات</a>
+                </div>
+
+                <!-- ستون عکس (سمت چپ) -->
+                <div class="col-lg-7">
+                    <!-- img-fluid باعث میشه عکس با صفحه سازگار باشه، rounded-4 گوشه‌ها رو گرد میکنه -->
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1000&auto=format&fit=crop" 
+                         alt="ویلای مدرن" 
+                         class="img-fluid rounded-4 shadow-lg w-100 object-fit-cover" 
+                         style="max-height: 550px;">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- اسکریپت بوت‌استرپ -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

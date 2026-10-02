@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <link rel="icon" href="c:\Users\Nimo\Desktop\ui\j1\C7yQnNDObFC (1).webp">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>املاک لوکس محمدمگونی</title>
+    <p>بامدیریت مگونی</p>
+    <!-- بوت‌استرپ RTL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+         <link rel="icon" href="c:\Users\Nimo\Desktop\ui\j1\C7yQnNDObFC (1).webp">
+    <!-- آیکون‌های بوت‌استرپ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    
+    <style>
+        /* فقط چند خط CSS ساده برای افکت‌های خاص که بوت‌استرپ به تنهایی نداره */
+        .hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1449844908441-8829872d2607?q=80&w=1920&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            min-height: 90vh;
+        }
+        .overlay-dark {
+            background: rgba(0, 0, 0, 0.6); /* لایه تیره روی عکس‌ها */
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+        }
+        .icon-box {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: #f8f9fa;
+        }
+
+    
+body {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlPpDJ0JStBBHELEAiQIU1EDdsJHZgonLmE2WMGP2omg&s=10.jpg');
+}
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- ========================================== -->
+    <!-- ۱. منوی بالای سایت (مثل عکس ۱) -->
+    <!-- ========================================== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 fixed-top">
+        <div class="container">
+            <style>
+body {
+  background-image: url('img_girl.jpg');
+}
+</style>
+            <a class="navbar-brand fw-bold fs-3 text-dark" href="#">realested magoni</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-medium">
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">صفحات</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">لیست</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">ویژگی‌ها</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">وبلاگ</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">تماس با ما</a></li>
+                </ul>
+                <div class="d-flex gap-2">
+                    <a href="#" class="btn btn-outline-dark px-3">ورود / ثبت نام</a>
+                    <a href="#" class="btn btn-warning px-3">ارسال امول</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========================================== -->
+    <!-- ۲. هدر اصلی + فرم جستجو (مثل عکس ۱) -->
+    <!-- ========================================== -->
+            <header class="hero-bg d-flex align-items-center pt-5 mt-5 position-relative">
+
+    <!-- لایه تیره برای خوانایی متن -->
+
+    <div class="overlay-dark position-absolute top-0 start-0 w-100 h-100"></div>
+
+    
+
+    <div class="container position-relative">
+
+        <div class="row justify-content-center text-center">
+
+            <!-- متن‌ها وسط‌چین شدند -->
+
+            <div class="col-lg-8 text-white mb-4">
+
+                <h1 class="display-4 fw-bold mb-3">ساخت رویاها،یک خانه درهرزمان</h1>
+
+                <p class="lead text-white-50 mb-4">مابهترین املاک را برای شما فراهم می‌کنیم.باجستجو در بین هزاران آگهی،خانه رویایی خودراپیداکنید.</p>
+
+            </div>
+
+            <!-- فرم جستجو وسط‌چین شد -->
+
+            <div class="col-lg-8">
+
+                <div class="card border-0 shadow-lg rounded-4 p-4">
+
+                    <h5 class="mb-3 fw-bold text-dark">جستجوی سریع ملک</h5>
+
+                   <form action="#listiongs" method="get">
+
+                        <div class="row g-3">
+
+                            <div class="col-md-6">
+
+                                <select class="form-select border-0 bg-light" name="transaction_type">
+                                    <option>نوع ملک</option>
+                                    <option>آپارتمان</option>
+                                    <option>ویلا</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+
+                                <select class="form-select border-0 bg-light" name="region">
+
+                                    <option>منطقه</option>
+
+                                    <option>نیاوران</option>
+
+                                    <option>زعفرانیه</option>
+
+                                </select>
+
+                            </div>
+
+                            <div class="col-md-6">
+
+                                <input type="text" class="form-control border-0 bg-light" placeholder="حداقل قیمت" name="min_price">
+
+                            </div>
+
+                            <div class="col-md-6">
+                                <input type="text" class="form-control border-0 bg-light" placeholder="حداکثر قیمت" name="max_price">
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-dark w-100 py-2 fw-bold"><i class="bi bi-search me-2"></i>جستجو</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+    <!-- ========================================== -->
+    <!-- ۳. بخش املاک ویژه - ردیف اول (مثل عکس ۲) -->
+    <!-- ========================================== -->
+    <section class="py-5" id="listings">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">خانه رویایی خود را پیدا کنید</h2>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- کارت ملک ۱ -->
+                <div class="col">
+                    <div class="card border-0 shadow-sm rounded-4 card-hover h-100">
+                        <div style="text-align: center;">
+                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvZ5NBr4gUK0uu28yP79wvjxUzUI_I7dnJ0vTUpFVvmg&s=10"class="card-img-top rounded-top-4w-100" alt="ملک" style="height: 250px; object-fit: cover;">
+                        </div>
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-3">برای فروش</span>
+                            <span class="badge bg-success position-absolute top-0 end-0 m-3">جدید</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-1">۲,۵۰۰,۰۰۰,۰۰۰ تومان</h5>
+                            <p class="text-muted small mb-2"><i class="bi bi-geo-alt me-1"></i>نیاوران، تهران</p>
+                            <h6 class="fw-bold">ویلای مدرن با استخر</h6>
+                            <div class="d-flex justify-content-between border-top pt-3 mt-3 text-muted small">
+                                <span><i class="bi bi-house-door me-1"></i> ۴ خواب</span>
+                                <span><i class="bi bi-droplet me-1"></i> ۳ حمام</span>
+                                <span><i class="bi bi-rulers me-1"></i> ۴۵۰ متر</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- کارت ملک ۲ -->
+                <div class="col">
+                    <div class="card border-0 shadow-sm rounded-4 card-hover h-100">
+                        <div class="position-relative">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvZ5NBr4gUK0uu28yP79wvjxUzUI_I7dnJ0vTUpFVvmg&s=10"class="card-img-top rounded-top-4w-100" alt="ملک" style="height: 250px; object-fit: cover;">
+
+                            <span class="badge bg-primary position-absolute top-0 start-0 m-3">برای اجاره</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-1">۴۵,۰۰۰,۰۰۰ تومان / ماهانه</h5>
+                            <p class="text-muted small mb-2"><i class="bi bi-geo-alt me-1"></i>زعفرانیه، تهران</p>
+                            <h6 class="fw-bold">آپارتمان لوکس با ویو</h6>
+                            <div class="d-flex justify-content-between border-top pt-3 mt-3 text-muted small">
+                                <span><i class="bi bi-house-door me-1"></i> ۳ خواب</span>
+                                <span><i class="bi bi-droplet me-1"></i> ۲ حمام</span>
+                                <span><i class="bi bi-rulers me-1"></i> ۲۲۰ متر</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- کارت ملک ۳ -->
+                <div class="col">
+                    <div class="card border-0 shadow-sm rounded-4 card-hover h-100">
+                        <div class="position-relative">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcN0jcxovp5DdcE8XmwkHSkTxQU0CGMHpENmuRcgaRMoGyfS3nAEArRp70&s=10"class="img-fluid rounded-4 shadow-sm w-100" style="height: 200px; object-fit: cover;">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-3">برای فروش</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-1">۱۸,۰۰۰,۰۰۰,۰۰۰ تومان</h5>
+                            <p class="text-muted small mb-2"><i class="bi bi-geo-alt me-1"></i>الهیه، تهران</p>
+                            <h6 class="fw-bold">پنت‌هاوس مدرن</h6>
+                            <div class="d-flex justify-content-between border-top pt-3 mt-3 text-muted small">
+                                <span><i class="bi bi-house-door me-1"></i> ۵ خواب</span>
+                                <span><i class="bi bi-droplet me-1"></i> ۴ حمام</span>
+                                <span><i class="bi bi-rulers me-1"></i> ۶۰۰ متر</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- ۴. بخش املاک ویژه - ردیف دوم (مثل عکس ۳) -->
+    <!-- ========================================== -->
+    <section class="py-4">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- کارت ملک ۴ -->
+                <div class="col">
+                    <div class="card border-0 shadow-sm rounded-4 card-hover h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzKqo9MqzpU-egmfCPNZetJRIE0v9v2NvrMRHAHQYam252EKFIFGepNZW0&s=10" class="img-fluid rounded-4 shadow-sm w-100" style="height: 250px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-1">۳,۲۰۰,۰۰۰,۰۰۰ تومان</h5>
+                            <p class="text-muted small mb-2"><i class="bi bi-geo-alt me-1"></i>کامران، تهران</p>
+                            <h6 class="fw-bold">ویلای دوبلکس دنج</h6>
+                            <div class="d-flex justify-content-between border-top pt-3 mt-3 text-muted small">
+                                <span><i class="bi bi-house-door me-1"></i> ۳ خواب</span>
+                                <span><i class="bi bi-droplet me-1"></i> ۲ حمام</span>
+                                <span><i class="bi bi-rulers me-1"></i> ۳۰۰ متر</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- کارت ملک ۵ -->
+                <div class="col">
+                    <div class="card border-0 shadow-sm rounded-4 card-hover h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC6AKHggc_GPoz-_aOIhA2H21v5qlSHS901ExszcewrQ&s=10" class="img-fluid rounded-4 shadow-sm w-100" style="height: 250px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-1">۹,۵۰۰,۰۰۰,۰۰۰ تومان</h5>
+                            <p class="text-muted small mb-2"><i class="bi bi-geo-alt me-1"></i>فرمانیه، تهران</p>
+                            <h6 class="fw-bold">عقب نشینی ویلا دار</h6>
+                            <div class="d-flex justify-content-between border-top pt-3 mt-3 text-muted small">
+                                <span><i class="bi bi-house-door me-1"></i> ۴ خواب</span>
+                                <span><i class="bi bi-droplet me-1"></i> ۳ حمام</span>
+                                <span><i class="bi bi-rulers me-1"></i> ۴۰۰ متر</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- کارت ملک ۶ -->
+                <div class="col">
+                    <div class="card border-0 shadow-sm rounded-4 card-hover h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxTBMppOqC2rTCYTheL9V0oI8Lf-ZxqOjpc41PeQezzCOPN1v0pROSlkPg&s=10" class="img-fluid rounded-4 shadow-sm w-100" style="height: 250px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="fw-bold mb-1">۶,۵۰۰,۰۰۰,۰۰۰ تومان</h5>
+                            <p class="text-muted small mb-2"><i class="bi bi-geo-alt me-1"></i>پاسداران، تهران</p>
+                            <h6 class="fw-bold">راهروی ویستا ورد</h6>
+                            <div class="d-flex justify-content-between border-top pt-3 mt-3 text-muted small">
+                                <span><i class="bi bi-house-door me-1"></i> ۲ خواب</span>
+                                <span><i class="bi bi-droplet me-1"></i> ۱ حمام</span>
+                                <span><i class="bi bi-rulers me-1"></i> ۱۲۰ متر</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <button class="btn btn-dark px-5 py-2 fw-bold rounded-pill">مشاهده همه خصوصیات</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- ۵. بخش آمار و ارقام (مثل عکس ۴) -->
+    <!-- ========================================== -->
+    <section class="py-5 position-relative my-5" style="background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRopUwQF8Oos-gbftbkesNjLBL6scaD_twHtbVyXdUHqQ&s=10') center/cover fixed;">
+        <div class="overlay-dark position-absolute top-0 start-0 w-100 h-100"></div>
+        <div class="container position-relative text-white">
+            <div class="row text-center g-4">
+                <div class="col-md-4">
+                    <div class="card bg-white bg-opacity-10 border-0 rounded-4 p-4 text-white">
+                        <i class="bi bi-building fs-1 mb-2"></i>
+                        <h3 class="fw-bold">۱۱۱</h3>
+                        <p class="mb-0">املاک برای فروش</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-white bg-opacity-10 border-0 rounded-4 p-4 text-white">
+                        <i class="bi bi-calendar-check fs-1 mb-2"></i>
+                        <h3 class="fw-bold">۶۶</h3>
+                        <p class="mb-0">اجاره ماهانه</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-white bg-opacity-10 border-0 rounded-4 p-4 text-white">
+                        <i class="bi bi-emoji-smile fs-1 mb-2"></i>
+                        <h3 class="fw-bold">۷۸</h3>
+                        <p class="mb-0">مشتریان خوشحال</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- ۶. بخش ویژگی‌ها (مثل عکس ۵) -->
+    <!-- ========================================== -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTda9RjWRVfXtEoB03cMTiVUXgVpV6bpVetKLeZSZqsqg&s=10" class="img-fluid rounded-4 shadow-lg" alt="ویژگی‌ها">
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <h2 class="fw-bold mb-4">چرا ما را انتخاب کنید؟</h2>
+                    <ul class="list-unstyled">
+                        <li class="d-flex align-items-start mb-4">
+                            <div class="icon-box text-primary me-3"><i class="bi bi-geo-alt fs-4"></i></div>
+                            <div>
+                                <h5 class="fw-bold">کاسا لوکسی حمام مکانی</h5>
+                                <p class="text-muted small mb-0">ما بهترین املاک را در مناطق لوکس شهر ارائه می‌دهیم.</p>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-start mb-4">
+                            <div class="icon-box text-primary me-3"><i class="bi bi-house fs-4"></i></div>
+                            <div>
+                                <h5 class="fw-bold">ویلا در میان علف‌های خوش‌بو</h5>
+                                <p class="text-muted small mb-0">ویلاهای دنج و آرام برای فرار از شلوغی شهر.</p>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-start mb-4">
+                            <div class="icon-box text-primary me-3"><i class="bi bi-tree fs-4"></i></div>
+                            <div>
+                                <h5 class="fw-bold">مارغ و بستان ورد</h5>
+                                <p class="text-muted small mb-0">املاکی با فضای سبز اختصاصی و چشم‌انداز عالی.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- ۷. گالری تصاویر - ردیف اول (مثل عکس ۶) -->
+    <!-- ========================================== -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">مکان‌ها برای شما</h2>
+            <div class="row g-4">
+                <div class="col-md-4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcDZfneMXjxITw94b0Q3q_OT5pG2dDAfMTmKsSf51LSw&s=10" style="height: 250px; object-fit: cover;" alt="گالری"></div>
+                <div class="col-md-4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUl35Kcov5F3vdjrYnIeFrVAmintUREPsYAFSjR7yJp9hvGXgVzV1hTBE&s=10" class="img-fluid rounded-4 shadow-sm w-100" style="height: 250px; object-fit: cover;" alt="گالری"></div>
+                <div class="col-md-4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGmWAipRkPl89CgYl3ge-9IUMX6ESc3-yiHhGVf5iR8K2CpGv44Ba8pR8&s=10" style="height: 250px; object-fit: cover;" alt="گالری"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- ۸. گالری تصاویر - ردیف دوم (مثل عکس ۷) -->
+    <!-- ========================================== -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrB6x9InvHxTB0Dy5K9vuoZqFyqgm2Gs65su-qWvL6vg&s=10" class="img-fluid rounded-4 shadow-sm w-100" style="height: 250px; object-fit: cover;" alt="گالری"></div>
+                <div class="col-md-4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvZ5NBr4gUK0uu28yP79wvjxUzUI_I7dnJ0vTUpFVvmg&s=10" class="img-fluid rounded-4 shadow-sm w-100" style="height: 250px; object-fit: cover;" alt="گالری"></div>
+                <div class="col-md-4"><img src="imag.amlak.jpg" class="img-fluid rounded-4 shadow-sm w-100" style="height: 250px; object-fit: cover;" alt="گالری"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- ۹. مراحل تهیه خانه (مثل عکس ۸) -->
+    <!-- ========================================== -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrB6x9InvHxTB0Dy5K9vuoZqFyqgm2Gs65su-qWvL6vg&s=10" class="img-fluid rounded-4 shadow-sm w-100" style="height: 250px; object-fit: cover;">
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <h2 class="fw-bold mb-4">مراحل تهیه خانه</h2>
+                    <div class="d-flex mb-4">
+                        <div class="badge bg-dark rounded-circle p-3 fs-5 me-3">۱</div>
+                        <div>
+                            <h5 class="fw-bold">خانه رویایی خود را پیدا کنید</h5>
+                            <p class="text-muted small">از بین هزاران آگهی، ملک مورد نظر خود را جستجو کنید.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4">
+                        <div class="badge bg-dark rounded-circle p-3 fs-5 me-3">۲</div>
+                        <div>
+                            <h5 class="fw-bold">برنامه‌ریزی برای بازدید</h5>
+                            <p class="text-muted small">با مشاوران ما تماس بگیرید و زمان بازدید را هماهنگ کنید.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="badge bg-dark rounded-circle p-3 fs-5 me-3">۳</div>
+                        <div>
+                            <h5 class="fw-bold">معامله را نهایی کنید</h5>
+                            <p class="text-muted small">با خیال راحت قرارداد خود را امضا کنید و به خانه جدید خوش آمدید.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- ۱۰. نظرات مشتریان (مثل عکس ۹) -->
+    <!-- ========================================== -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="card border-0 shadow-sm rounded-4 p-4 ps-lg-5">
+            <div class="row align-items-center">
+                <div class="col-lg-4 mb-4 mb-lg-0 d-flex justify-content-center">
+                    <img src="c:\Users\Nimo\Desktop\ui\j1\C7yQnNDObFC (1).webp"
+                       class="rounded-circle shadow-lg border border-5 border-white"
+                        style = "width: 220px; heigth:220px; object-fit: cover;"
+                </div>
+                </div>
+                <div class="col-lg-8 ps-lg-5">
+                    <h2 class="fw-bold mb-2">محمدمگونی</h2>
+                    <div class="text-warning mb-3">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="lead text-muted lh-lg">
+                           "املاک محمدمگونی فوق‌العاده است. تیم حرفه‌ای و دلسوز آن‌ها تمام انتظارات  را برآورده می کنند. آن‌ها با دانش و تجربه خود، بهترین گزینه‌ها را به مشتریان ارائه می دهند و در تمام مراحل خرید کنارمشتریان هستند.قطعاً به همه توصیه می‌کنم.به املاک ما سربزنن"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- ۱۱. وبلاگ و اخبار (مثل عکس ۱۰) -->
+    <!-- ========================================== -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">آخرین اخبار و مقالات</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 card-hover">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY2J8FBf3DG6699xNRBxnmgJfqMyyDpBPsAFxJaiOsLg&s=10" class="card-img-top rounded-top-4" style="height: 200px; object-fit: cover;" alt="وبلاگ">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">مسکن</span>
+                            <h5 class="fw-bold">۵ شهر برتر برای سرمایه‌گذاری در املاک</h5>
+                            <p class="text-muted small mb-0">با بهترین مناطق برای سرمایه‌گذاری در بازار مسکن آشنا شوید.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 card-hover">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO8HBvkQ8PEZ80YcAD3lmZqSFGpAlUqnuyYCf_1T97tQ&s=10" class="card-img-top rounded-top-4" style="height: 200px; object-fit: cover;" alt="وبلاگ">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">فضای داخلی</span>
+                            <h5 class="fw-bold">راهنمای خرید اولین خانه</h5>
+                            <p class="text-muted small mb-0">نکات کلیدی که قبل از خرید اولین خانه باید بدانید.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 card-hover">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2ET7x8UXNbnoU2pWsXeSlO0ayYSo7z2xWfolQc6hs3w&s=10 class="card-img-top rounded-top-4 style="height: 200px; object-fit: cover;"> 
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">دکوراسیون</span>
+                            <h5 class="fw-bold">لوکس‌ترین دکوراسیون‌های مدرن</h5>
+                            <p class="text-muted small mb-0">ایده‌هایی برای طراحی داخلی خانه رویایی خود.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- ۱۲. فوتر (مثل عکس ۱۱) -->
+    <!-- ========================================== -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">realested magoni</h5>
+                    <p class="text-white-50 small">ما به شما کمک می‌کنیم تا خانه رویایی خود را پیدا کنید. با سال‌ها تجربه در بازار املاک، در کنار شما هستیم.</p>
+                    <div class="input-group mt-3">
+                        <input type="email" class="form-control bg-transparent text-white border-secondary" placeholder="ایمیل خود را وارد کنید">
+                        <button class="btn btn-warning"><i class="bi bi-send"></i></button>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="fw-bold mb-3">لینک‌های سریع</h6>
+                    <ul class="list-unstyled text-white-50 small">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-white-50">درباره ما</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-white-50">خدمات</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-white-50">وبلاگ</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-white-50">تماس با ما</a></li>
+                        <li class="mb-2"><a href="https://instageram.com/mgwnymhmd" target="_blank" class="text-decoration-none text-white-50 d-flex align-items-center">
+                            <i class="bi bi-instageram me-2 fs-5"></i>mgwnymhmd
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-3">املاک</h6>
+                    <ul class="list-unstyled text-white-50 small">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-white-50">خرید ملک</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-white-50">اجاره ملک</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-white-50">مشاوره سرمایه‌گذاری</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-3">تماس با ما</h6>
+                    <ul class="list-unstyled text-white-50 small">
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>تهران، نیاوران، خیابان اصلی</li>
+                        <li class="mb-2"><i class="bi bi-telephone me-2"></i>۰9931307250</li>
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i>mhmdmgwny34@gmil.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary mt-4">
+            <div class="text-center text-white-50 small">
+                کلیه حقوق این وب‌سایت متعلق به املاک محمدمگونی می‌باشد © ۲۰۲۶
+            </div>
+        </div>
+    </footer>
+
+    <!-- اسکریپت بوت‌استرپ -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
